@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Twice Before Climbing</title>
+    <style>
+        /* Reset default margin and padding for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color and style for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Style the header section */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Style the navigation links */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 1rem 0;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9900;
+        }
+
+        /* Style the content sections */
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the image gallery */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .image-gallery img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the contact form */
+        form label, form input, form textarea, form button {
+            display: block;
+            margin: 1rem 0;
+            width: 100%;
+        }
+
+        form input, form textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #ff9900;
+        }
+
+        /* Style the footer */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            section {
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Think Twice Before Climbing</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#dangers">Dangers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About</h2>
+        <p>Climbing the world's most dangerous mountains is not for the faint of heart. This website is dedicated to raising awareness about the inherent risks and dangers involved in such extreme endeavors.</p>
+    </section>
+    <section id="dangers">
+        <h2>Dangers</h2>
+        <p>Mountains like K2, Annapurna, and the Eiger have claimed the lives of many skilled climbers. Extreme weather conditions, avalanches, and challenging terrains make these climbs perilous.</p>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>While these mountains are undeniably beautiful, their beauty often conceals the risks involved. Here are some breathtaking images:</p>
+        <div class="image-gallery">
+            <img src="mountain1.jpg" alt="Mountain 1">
+            <img src="mountain2.jpg" alt="Mountain 2">
+            <img src="mountain3.jpg" alt="Mountain 3">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have questions or want to learn more about the risks of climbing dangerous mountains, please feel free to contact us.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Think Twice Before Climbing</p>
+    </footer>
+</body>
+</html>
