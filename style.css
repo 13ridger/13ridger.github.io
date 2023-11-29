@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fefffe; /* Green background color */
+  background-color: #fefffe; 
 }
 
 header {
@@ -34,14 +34,14 @@ p {
 }
 
 img {
-  max-width: 150px; /* Adjust the size as needed */
+  max-width: 150px; 
   height: auto;
   border-radius: 50%;
   margin-top: 20px;
-  float: right; /* Align to the right */
+  float: right; 
 }
 
 div {
-  max-width: 60%; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the content */
+  max-width: 60%; 
+  margin: 0 auto; 
 }
