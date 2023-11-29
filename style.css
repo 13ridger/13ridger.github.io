@@ -7,11 +7,13 @@ body {
 }
 
 header {
-  background-color: #668c25;
+  background-color: #688f25;
   color: white;
   text-align: center;
   padding: 1em 0;
 }
+p {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: larger;}
 
 nav {
   display: flex;
@@ -34,9 +36,9 @@ p {
 }
 
 img {
-  max-width: 150px; 
+  max-width: 40%; 
   height: auto;
-  border-radius: 50%;
+  border-radius: 0%;
   margin-top: 20px;
   float: right; 
 }
@@ -45,3 +47,4 @@ div {
   max-width: 60%; 
   margin: 0 auto; 
 }
+
