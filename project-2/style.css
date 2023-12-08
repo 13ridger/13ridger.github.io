@@ -1,14 +1,23 @@
 /* style */
+@font-face {
+	font-family: 'MaunaLoa';
+	src: url('./Display-Font/MaunaLoa.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	background-color: rgb(243, 236, 188);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	height: 100vh;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
 	width: 100vw;
 	margin: 0;
 	padding: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	color: #ffffff;
 }
 
-/* ~ Elements ~ */
 a:link {
 	text-decoration: none;
 }
@@ -21,7 +30,11 @@ ul {
 	list-style: none;
 }
 
-/* SHARED */
+/* GENERAL */
+.center {
+	display: flex;
+	justify-content: center;
+}
 .horz-center {
 	width: 50%;
 	margin: auto;
@@ -35,7 +48,6 @@ ul {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	min-height: 90vh;
 }
 
 .flex-rows {
@@ -43,6 +55,60 @@ ul {
 	flex-direction: column;
 	justify-content: space-around;
 	width: 100%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bg-orange {
+	background-color: #ffb547;
+	opacity: 0.8;
+}
+.bg-teal {
+	background-color: #00bcb4;
+	opacity: 0.8;
+}
+.bg-red {
+	background-color: #ff4747;
+	opacity: 0.8;
+}
+.bg-green {
+	background-color: #e1ee32;
+	opacity: 0.8;
+}
+
+.bg-pattern {
+	background-image: url('./public/tikibackground2.jpeg');
+}
+.bg-karaoke {
+	background-image: url('./public/karaoke2.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: initial;
+	height: 60vh;
+}
+
+.bg-hero {
+	background-image: url('./public/hero-image.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: initial;
+}
+
+.txt-teal {
+	color: #00bcb4;
+}
+.txt-green {
+	color: #e1ee32;
+}
+.txt-red {
+	color: #ff4747;
+}
+.txt-blue {
+	color: #00bcb4;
+	font-family: 'MaunaLoa';
+	font-size: 24px;
 }
 
 /* ~ BASE ~ */
@@ -53,12 +119,28 @@ ul {
 	display: flex;
 }
 
+.nav-item {
+	width: 52px;
+	text-align: center;
+	/* align-items: flex-end; */
+	font-size: 20px;
+}
+.nav-title {
+	width: 84px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 24px;
+	font-family: 'MaunaLoa';
+}
+
 ul#navbar,
 ul#footbar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	align-items: center;
+	align-items: flex-end;
 	width: 100%;
 	padding: 0;
 }
@@ -70,43 +152,42 @@ ul#footbar {
 }
 
 #footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
 	width: 100%;
-	text-align: center;
-}
-
-.nav-item {
-	width: 52px;
 	text-align: center;
 }
 
 /* ~ HOME ~ */
-
-#hero {
-	min-height: 0vh;
-	height: 40%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url('./public/hero-image.webp');
-}
-
 .food-grid {
-	width: 100%;
-	height: 80px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+	margin: 8px;
 }
 
 .food-square {
-	width: 300px;
+	margin: auto;
+	transition: transform 0.2s; /* Animation */
+}
+.food-square:hover {
+	transform: scale(1.08);
+}
+.square-image {
+	object-fit: cover;
 	height: 300px;
+	width: 300px;
 	border-style: solid;
 	border-color: #4abfbf;
 	border-width: 6px;
-	margin: 4px;
+	margin: 8px;
+}
+
+.hello-overlay {
+	position: relative;
+	top: 200px;
+	font-family: 'MaunaLoa';
+	padding-left: 48px;
+	padding-top: 48px;
+	height: 90vh;
 }
 
 /* EATS */
@@ -124,5 +205,62 @@ ul#footbar {
 
 .menu-block {
 	margin: 8px;
-	background-color: rgb(249, 173, 50);
-	opacity: 0.7;}
+	padding: 36px;
+}
+
+.menu-title {
+	font-family: 'MaunaLoa';
+	font-size: 48px;
+	text-align: center;
+}
+.karaoke-title {
+	font-family: 'MaunaLoa';
+}
+
+.menu-happyhour {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 8px;
+	padding: 20px;
+	height: 100%;
+}
+
+.happyhour-line {
+	font-family: 'MaunaLoa';
+	font-size: 20px;
+	text-align: center;
+}
+
+.pupu {
+	font-size: 24px;
+}
+
+.item-block {
+	width: 60%;
+	margin: auto;
+}
+
+/* KARAOKE */
+
+.karaoke-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 82vh;
+}
+
+.karaoke-text {
+	display: flex;
+	flex-direction: column;
+	width: 42%;
+	justify-content: center;
+	align-items: center;
+	height: 82vh;
+}
+
+.ktext-block {
+	background-color: #00bcb4;
+	padding: 24px;
+	opacity: 0.8;
+}

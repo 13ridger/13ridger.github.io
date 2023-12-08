@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    position: relative;
+    height: 100vh;
+    background: url('mountain.jpg') center/cover no-repeat; /* Replace 'mountain.jpg' with your image URL */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image h1 {
+    font-size: 2em;
+}
+
+.photo-columns {
+    display:inline-flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.photo-column {
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.photo-column img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.background-image {
+    position: relative;
+    height: 100vh;
+    background: url('mountain.jpg') center/cover no-repeat; /* Replace 'mountain.jpg' with your image URL */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image h1 {
+    font-size: 2em;
+}
+
+.photo-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.photo-column {
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.photo-column img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
